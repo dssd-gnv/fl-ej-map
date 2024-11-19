@@ -10,7 +10,7 @@
 
   <style>
     #map {
-      height: 180px;
+      height: 600px;
     }
   </style>
 </head>
@@ -23,7 +23,8 @@
           crossorigin=""></script>
   <script>
 
-    var map = L.map('map').setView([51.505, -0.09], 13);
+    var map = L.map('map').setView([29.6466, -82.3474], 13);
+    
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
         maxZoom: 19,
         attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
