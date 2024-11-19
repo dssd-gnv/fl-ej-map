@@ -14,12 +14,7 @@ We are working with Dr. M. Anwar Sounny-Slitine from UF's Geography Department, 
 
 ### Installing
 
-* How/where to download your program
-* Any modifications needed to be made to files/folders
-
 ### Executing program
-
-* How to run the program
 
 ## Authors
 
