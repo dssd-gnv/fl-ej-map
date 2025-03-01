@@ -5,28 +5,20 @@
     position: fixed;
     width: 36px;
     height: 30px;
-    left: 20px;
-    top: 20px;
-    z-index: 1000;
+    left: 150px;
+    top: 18px;
   }
   
-  /* Color/shape of burger icon bars */
+  /* Color/shape of burger bars icon */
   .bm-burger-bars {
-    background: black;
+    background: white;
   }
   
-  /* Position and sizing of clickable cross button */
-  .bm-cross-button {
-    height: 24px;
-    width: 24px;
-  }
-  
-  /* Sidebar styles */
+  /* Side panel styles */
   .bm-menu {
     background: white;
     padding: 2.5em 1.5em 0;
     font-size: 1.15em;
-    width: 250px;
   }
   
   /* Overlay when menu is open */
