@@ -1,10 +1,13 @@
 import React from 'react';
+import { slide as Menu } from 'react-burger-menu';
 
 const Panel = () => {
   return (
-    <div className="bg-gray-200 w-64 h-full p-4">
-      {/* Panel content goes here */}
-    </div>
+    <Menu>
+    <a className="menu-item" href="/component1">Component 1</a>
+    <a className="menu-item" href="/component2">Component 2</a>
+    <a className="menu-item" href="/component3">Component 3</a>
+  </Menu>
   );
 };
 
