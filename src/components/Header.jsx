@@ -1,5 +1,5 @@
 import Select from 'react-select';
-const Header = () => {
+const Header = ({ datasets, updateDatasets }) => {
   const options = [
         { value: 'Hazardous Waste Sites', label: 'Hazardous Waste Sites' },
         { value: 'Superfund Sites', label: 'Superfund Sites' },
@@ -11,6 +11,7 @@ const Header = () => {
             className="basic-single w-75"
             classNamePrefix="select"
             options={options}
+            onChange={(option) => updateDatasets(new Set(datasets).add(option.value).values().toArray())}
             />
     </header>
   );
