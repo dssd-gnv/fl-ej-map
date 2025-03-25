@@ -3,7 +3,6 @@ import React from 'react';
 import Header from './components/Header';
 import Map from './components/Map';
 import Panel from './components/Panel';
-import About from './components/aboutButton';
 
 const App = () => {
   const datasetToFilenameMapping = {
