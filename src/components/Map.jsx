@@ -4,7 +4,7 @@ import 'leaflet/dist/leaflet.css';
 import 'react-leaflet-markercluster/styles';
 import {useEffect, useState} from "react";
 
-const Map = ({data}) => {
+const Map = ({data, type}) => {
     const [siteLocations, setSiteLocations] = useState([]);
     useEffect(() => {
         setSiteLocations(() => {
@@ -12,7 +12,6 @@ const Map = ({data}) => {
                 return {
                     'coordinates': [parseFloat(site['Latitude']), parseFloat(site['Longitude'])],
                     'location': site['Location'],
-                    'type': 'Hazardous Waste Site'
                 }
             });
         });

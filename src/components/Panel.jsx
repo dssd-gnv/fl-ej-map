@@ -55,14 +55,14 @@ const Panel = ({setData}) => {
                 }}
             >
               <SidebarItem>
-                <Label className="mb-2 block text-wrap" htmlFor="default-file-upload">
+                <Label className="mb-2 block text-wrap">
                   Please upload a .csv file
                 </Label>
                 <br />
                 <FileInput id="default-file-upload" onChange={handleChange} accept=".csv"/>
                 <br />
-                <Label className="mb-2 block text-wrap" htmlFor="default-file-upload">
-                  <strong>Note: File must have columns named &#34;Location, &#34;Latitude&#34; and &#34;Longitude&#34; (the file can have other columns as well). </strong>
+                <Label className="mb-2 block text-wrap">
+                  <strong>Note: File must have columns named "Location", "Latitude", and "Longitude".</strong>
                 </Label>
               </SidebarItem>
             </SidebarCollapse>
