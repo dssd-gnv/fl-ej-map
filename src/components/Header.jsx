@@ -1,19 +1,15 @@
-import Select from 'react-select';
-const Header = ({ datasets, updateDatasets }) => {
-  const options = [
-        { value: 'Hazardous Waste Sites', label: 'Hazardous Waste Sites' },
-        { value: 'Superfund Sites', label: 'Superfund Sites' },
-  ];
+import {HiMenu} from "react-icons/hi";
+
+const Header = ({ toggleSidebar}) => {
   return (
-    <header className="bg-gray-800  flex justify-between items-center p-4">
-        <span className="text-white text-2xl"> Dashboard </span>
-        <Select
-            className="basic-single w-75"
-            classNamePrefix="select"
-            options={options}
-            onChange={(option) => updateDatasets(new Set(datasets).add(option.value).values().toArray())}
-            />
-    </header>
+    <nav className="fixed top-0 z-10 w-full flex gap-4 p-3 items-center bg-white border-b border-gray-200 dark:bg-gray-800 dark:border-gray-700">
+      <span className="self-center whitespace-nowrap text-2xl font-semibold dark:text-white">Dashboard</span>
+      <span 
+        onClick={toggleSidebar} 
+      >
+        <HiMenu className="h-7 w-7" />
+      </span>
+    </nav>
   );
 };
 
