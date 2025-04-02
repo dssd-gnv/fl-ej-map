@@ -1,4 +1,5 @@
 import {HiMenu} from "react-icons/hi";
+import Button from 'react-bootstrap/Button';
 
 const Header = ({ toggleSidebar}) => {
   return (
@@ -9,6 +10,12 @@ const Header = ({ toggleSidebar}) => {
       >
         <HiMenu className="h-7 w-7" />
       </span>
+      <Button
+            href="https://gainesville.dssdglobal.org/projects/ej-dashboard"
+            className="d-flex text-white ml-170"
+            target="_blank" 
+            rel="noopener noreferrer"
+        >About</Button>
     </nav>
   );
 };
