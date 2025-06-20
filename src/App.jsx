@@ -15,7 +15,7 @@ const App = () => {
     <div className="h-screen flex flex-col flex-grow">
         <Header toggleSidebar={toggleSidebar} />
         <div className="flex flex-grow">
-            <Panel collapsed={collapsed} setData={setData}/>
+            <Panel collapsed={collapsed} setData={setData} data={data}/>
             <div className="flex-grow mt-14">
                 <Map data={data} />
             </div>
